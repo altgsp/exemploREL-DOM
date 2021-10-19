@@ -1,28 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
+<head>
+    <!--Meta com icon para o gui ado navegador-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atelie-digital.css">
+    <title>ge ♥ ArtScript</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/280x280_RS/15/6d/b6/156db64c87633b77c9958dc445096ffd.jpg" />
+</head>
 
 <body>
-    <button id="botao">Clique-me</button>
-    <button id="cancelar">Cancelar evento</button>
+    <!--Titulo principal da página com section com logotipo-->
+    <h1></h1>
 
-    <script>
-        let element = "#botao";
-        let clique; // declara a variável para o nome da função
-        document.querySelector(element).addEventListener('click', clique = (ev) => {
-            console.log("evento");
-        });
+    <section class="logotipo">
+        <img src="img/Ge.artscript.png" alt="logotipo com um desenho de flores no meio envolto do lome do ateliê">
+    </section>
 
-        // esse listener abaixo é apenas para ilustrar o cancelamento do evento
-        document.querySelector("#cancelar").addEventListener('click', cancela = () => {
-            // linhas de exemplo (apague)
-            console.log("evento do botão cancelado");
-            document.querySelector(element).textContent = "Clique-me e nada acontece :(";
-            document.querySelector("#cancelar").textContent = "Evento foi cancelado";
-            document.querySelector("#cancelar").removeEventListener('click', cancela);
-            // fim das linhas de exemplo
+    <section class="img-1">
+        <img src="img/Capturar.JPG" alt="ícone com exebição da imagem de 3 obras da artista">
+    </section>
+    <header>
+        <section>
+            <!--Area de navegação e acesso à outras partes do site-->
+            <nav class="principal">
+                <!--Está é uma lista não ordenada, devido ao uso do UL-->
+                <ul>
+                    <li>
+                        <a href="#biografia">BIOGRAFIA</a>
+                    </li>
 
-            // remove o evento de clique no botão   
-            document.querySelector(element).removeEventListener('click', clique);
-        });
-    </script>
+                    <li>
+                        <a href="p2projeto.html">PROJETOS</a>
+                    </li>
+
+                    <li>
+                        <a href="orçamento-p3.html">ORÇAMENTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <h2>☼ P R O P O S T A ☼</h2>
+    <img src="img/projeto-1.JPG" alt="Imagem com uma mão com um olho iluminado">
+    <p class="proposta">
+        Ateliê Digital criado para conectar clientes interessados em prestaçõs de serviços artíticos personalizados e voltados para multiplataforma: internet, murais de empresas públicas ou privadas, ilustrações tradicionais ou digitais, logotipos, embalagens
+        de produtos, desenhos de pets, entre outros.
+    </p>
+
+    <img src="img/mural4.jfif" alt="Mural de area interna de uma agência contendo uma rua com vários prédios e casas de arquiteuras diferentes, projeto em andamento">
+
+    <section class="principal1" id="biografia">
+
+        <h2 class="bio">. B I O G R A F I A .</h2>
+        <img src="img/bio.JPG" id="img-bio" alt="imagem de um desenho de uma mulher negra com tranças nagô e abaixo nome da artista e proprietária do ateliê: Geisa Santos">
+
+        <p class="bio">
+            Teve seu primeiro contato com a arte desde os 8 anos depois de seguir projetos de aulas livres na disciplina de Artes no colégio sempre fez da arte sua terapia e seu refúgio, mas com o passar dos anos deixou esse lado esquecido, na transição da adolescencia
+            para a vida adulta. Entretanto se redescobriu artista voltando aos antigos hábitos de desenhar com grafite e qualquer folha de papel. Com o tempo, Geisa adquiriu técnicas em diferentes pilares da arte e começou a criar diversos projetos que
+            envolvem pintura acrílica, design, muralismo, realismo colorido, entre outros.
+        </p>
+        <p class="bio1">
+            Atualmente com 25 anos, Geisa é uma artista multidisciplinar, que além de projetos individuais, possui um ateliê num bairro periférico de Salvador.
+        </p>
+
+    </section>
+
+    <!--Footer com imagem da logo e informaços básicas-->
+    <footer>
+        <!-- <img src="img/icon-footer.JPG"> -->
+        . 📍 Salvador/BA . <a href="https://www.instagram.com/geisa.art/" target="_blank">Instagram</a> . 🎨 .
+        <br>
+        <p><b>© Copyright 2021</b> desenvolvido por <b><a href="https://github.com/altgsp" target="_blank">Geisa
+                    Santos</a></b> . 👾 . - Todos os direitos reservados.</p>
+    </footer>
 </body>
+
+</html>
